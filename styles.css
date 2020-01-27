@@ -1,0 +1,99 @@
+
+body {
+	padding: 3px;
+	background-color: #1aa3ff;
+	color: #333333;  /* font color */
+	font-family: 'Dosis';
+}
+
+h1 {
+	color: #992600;
+	padding: 10px;
+	background-color: white;
+	border-radius: 0.3em;
+}
+h2 {
+	color: #009973;
+}
+
+.sidebar {
+		  margin: 0;
+		  padding: 0;
+		  width: 200px;
+		  background-color: #f1f1f1;
+		  position: fixed;
+		  height: 96.5%;
+		  overflow: auto;
+		}
+		.sidebar a {
+		  display: block;
+		  color: black;
+		  padding: 16px;
+		  text-decoration: none;
+		  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+		}
+		.sidebar a.active {
+		  background-color: #009973;
+		  color: white;
+		  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+		}
+		.sidebar a:hover:not(.active) {
+		  background-color: #fcd4c0;
+		  color: black;
+		  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+		}
+		div.content {
+		  margin-left: 210px;
+		  padding: 1px 25px;
+		  height: 1388px;
+		  background-color: #ccf2ff;
+		  overflow: auto;
+		}
+		/* On screens that are less than 700px wide, make the sidebar into a topbar */
+		@media screen and (max-width: 700px) {
+		  .sidebar {
+		    width: 100%;
+		    height: auto;
+		    position: relative;
+		  }
+		  .sidebar a {float: left;}
+		  div.content {margin-left: 0;}
+		}
+		.dropbtn {
+		  background-color: #f1f1f1;
+		  color: black;
+		  padding: 16px 16px 16px 16px;
+		  font-size: 16px;
+		  border: none;
+		  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+		  text-align: left;
+		}
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		}
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f1f1f1;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+		.dropdown-content a {
+		  color: black;
+		  padding: 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+		.dropdown-content a:hover {
+			background-color: #fcd4c0;
+		}
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		.dropdown:hover .dropbtn {
+			background-color: #ff884d;
+			color:white;
+			font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+		}
